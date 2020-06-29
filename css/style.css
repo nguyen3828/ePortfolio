@@ -1,0 +1,113 @@
+.game-scene{
+    width: 97%;
+    height: 700px;
+    /*background-image: url('../angryBirds/welcomeBackground.jpg')*/
+}
+body{
+    /*overflow: hidden;*/
+}
+.welcome{
+    padding: 2% 40%;
+}
+/*.wrapper{*/
+/*    height: auto;*/
+/*    width: inherit;*/
+/*    overflow: hidden;*/
+/*}*/
+.gameContainer{
+    position: relative;
+    background: url('../angryBirds/welcomeBackground.jpg');
+
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /*margin:auto;*/
+   /*transition:  width 100s;*/
+   /* animation: slide 60s linear infinite;*/
+
+}
+/*https://css-tricks.com/snippets/css/keyframe-animation-syntax/*/
+/*@keyframes slide {*/
+/*    0%{*/
+/*        transform: translate3d(0, 0, 0);*/
+/*    }*/
+/*    100%{*/
+/*        transform: translate3d(-1692px, 0, 0);*/
+/*    }*/
+/*}*/
+.images{
+    height: 517px;
+    width:344px;
+    flex: auto;
+}
+/*Align button vertically */
+.button-Container{
+    margin:auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    display: table;
+    width: 250px;
+}
+.button{
+    padding: 1px;
+}
+
+.button .options .imagesButton{
+    float:left;
+    font-family: 'Dekko', serif;font-size: 22px;
+}
+.scene{
+    height:900px;
+    width: 1600px;
+}
+#bird {
+    height: 100px;
+    width: 180px;
+    top: 900px;
+    /*prevent image from becoming blue when clicking too much
+    https://stackoverflow.com/questions/21003535/anyway-to-prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+}
+#backGround{
+    position: absolute;
+    background-repeat: repeat-x;
+    height: 100%;
+    width: 97%;
+}
+
+
+.wrapper {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.sliding-background {
+    background: url("../angryBirds/background.jpg") repeat-x;
+    /*background-size: 9000px;*/
+    height: 9000px;
+    width: 99076px;
+    animation: slide 180s linear infinite;
+    z-index: -1;
+}
+
+@keyframes slide{
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(-6892px, 0, 0);
+    }
+}
+
+.page-footer{
+    background-color: gray;
+}
