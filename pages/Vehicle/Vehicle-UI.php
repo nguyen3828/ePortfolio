@@ -33,7 +33,7 @@
 
     <!-- This button will open up the modal with empty input fields-->
     <button  @click="openModal" class="btn btn-default btn-sm">
-        <span class="fas fa-plus fa-2x"> Add New Vehicle</span>
+        <span class="fas fa-plus fa-2x"> </span>
     </button>
 
     <!-- This single file component is responsible for display a table alongside edit buttons-->

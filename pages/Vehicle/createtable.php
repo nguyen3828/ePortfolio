@@ -1,7 +1,7 @@
 <?php
 /**************************************
  * File Name: createtable.php
- * User: Hieu Nguyen
+ * User: cst223
  * Date: 2019-11-27
  * Project: vehicleEntityAndAPI
  **************************************/
@@ -17,6 +17,5 @@ $command = $repo->createTables($entity);
 
 foreach($command as $sql){
     $db ->exec($sql);
+
 }
-
-
